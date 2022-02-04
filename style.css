@@ -1,23 +1,31 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
 }
 
 .container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 88vh 0vh;
 }
 
 .menu{
     display: grid;
-    grid-template-rows: 10vh  20vh 50vh 30vh;
+    grid-template-rows: 10vh  45vh 33vh;
     grid-column: 1/1;
+    width: 170px;
 }
 
 .main{
         display: grid;
-        grid-template-rows: 20vh 70vh 20vh;
-        grid-column: 2/5;
+        grid-template-rows: 10vh 30vh 60vh;
+        grid-column: 2/9;
 }
 
 
@@ -37,41 +45,119 @@ body{
     
 }
 
-
-.menu > footer{
-    background-color: lightseagreen;
-    
+.main > nav{
+    background-color: aqua;
 }
 
 .main > header{
     background-color: blueviolet;
 }
 
-.main > main{
-    background-color: darkgreen;
-}
-
-.main > footer{
-    background-color: darkorange;
+.main{
+    background-color: yellowgreen;
 }
 
 section{
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .caixa{
-    flex: 1 1 200px;
+    flex: 1 1 180px;
     background-color: lightslategrey;
-    margin-right: 5px;
+    margin: 0 15px 5px 5px;
+    border-radius: 5px;
 }
 
 .caixa > img{
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px 0px 0px 5px
+}
+
+.caixa > p{
+    margin-top: 35px;
+    font-size: 1.3em;
+    padding-left: 20px;
     display: inline-block;
+}
+
+ul{
+    padding-inline-start: 1px;
+}
+
+.main{
+    overflow-y: scroll;
+}
+
+.albuns{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.img-g{
+    flex: 1 1 100px;
+    background-color: brown;
+    margin: 20px 35px;
+    border-radius: 7px;
+    
+
+}
+
+.img-g  p{
+    text-align: center;
+}
+
+.img-g > img{
+    display: block;
+    margin: 15px auto 0px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+#barra{
+    margin: 0 auto;
+    width: 215px;
+    padding-bottom: 9px;
+}
+
+#barra > p{
+    display: inline-block;
+    margin: 0px;
+}
+
+#bloco{
+    background-color: black;
+    display: inline-block;
+    margin: 0 4px;
+    width: 150px;
+    height: 7px;
+    border-radius: 6px;
+}
+
+.musica{
     height: 50px;
     width: 50px;
 }
-.caixa > p{
-    display: inline;
+
+#footer{
+    background-color: darkorange;
+}
+
+.menu > main > a, .menu > nav > a{
+    display: block;
+}
+
+.topico{
+    font-size: 1.5em;
+}
+
+.logo{
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
 }
