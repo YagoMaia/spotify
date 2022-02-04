@@ -1,0 +1,77 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menu{
+    display: grid;
+    grid-template-rows: 10vh  20vh 50vh 30vh;
+    grid-column: 1/1;
+}
+
+.main{
+        display: grid;
+        grid-template-rows: 20vh 70vh 20vh;
+        grid-column: 2/5;
+}
+
+
+.menu > header{
+    background-color: crimson;
+    
+}
+
+.menu > nav{
+    background-color: forestgreen;
+    
+}
+
+.menu > main{
+    background-color: hotpink;
+    overflow-y: scroll;
+    
+}
+
+
+.menu > footer{
+    background-color: lightseagreen;
+    
+}
+
+.main > header{
+    background-color: blueviolet;
+}
+
+.main > main{
+    background-color: darkgreen;
+}
+
+.main > footer{
+    background-color: darkorange;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+.caixa{
+    flex: 1 1 200px;
+    background-color: lightslategrey;
+    margin-right: 5px;
+}
+
+.caixa > img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.caixa > p{
+    display: inline;
+}
