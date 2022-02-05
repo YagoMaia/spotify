@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Circular-bold';
+    src: url(Circular/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Circular-book';
+    src: url(Circular/CircularStd-Book.otf);
+}
+
 body{
     height: 100%;
     width: 100%;
@@ -7,6 +17,11 @@ body{
 img{
     height: 50px;
     width: 50px;
+}
+
+a, p, h1, h2{
+    color: white;
+    font-family: 'Circular-bold', sans-serif;
 }
 
 .container{
@@ -26,35 +41,33 @@ img{
         display: grid;
         grid-template-rows: 10vh 30vh 60vh;
         grid-column: 2/9;
+        background-color: #121212;
 }
 
-
-.menu > header{
-    background-color: crimson;
-    
-}
-
-.menu > nav{
-    background-color: forestgreen;
-    
+.menu{
+    background-color: #000000;
 }
 
 .menu > main{
-    background-color: hotpink;
     overflow-y: scroll;
     
 }
 
 .main > nav{
-    background-color: aqua;
+    background-color: #2A3320;
 }
 
 .main > header{
-    background-color: blueviolet;
+    background-image: linear-gradient(180deg, #2A3320, #121212);
+    overflow-y: auto;
 }
 
-.main{
-    background-color: yellowgreen;
+.main a{
+    text-decoration: none;
+}
+
+.main a:hover{
+    text-decoration: underline;
 }
 
 section{
@@ -65,9 +78,14 @@ section{
 
 .caixa{
     flex: 1 1 180px;
-    background-color: lightslategrey;
+    background-color: #272727;
     margin: 0 15px 5px 5px;
     border-radius: 5px;
+}
+
+.caixa:hover{
+    background-color: #424242;
+    transition-duration: 0.7s;
 }
 
 .caixa > img{
@@ -99,11 +117,14 @@ ul{
 }
 .img-g{
     flex: 1 1 100px;
-    background-color: brown;
+    background-color: #272727;
     margin: 20px 35px;
     border-radius: 7px;
-    
+}
 
+.img-g:hover{
+    background-color: #424242;
+    transition-duration: 0.7s;
 }
 
 .img-g  p{
@@ -145,7 +166,7 @@ ul{
 }
 
 #footer{
-    background-color: darkorange;
+    background-color: #242424;
 }
 
 .menu > main > a, .menu > nav > a{
