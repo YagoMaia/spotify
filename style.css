@@ -50,7 +50,44 @@ a, p, h1, h2{
 
 .menu > main{
     overflow-y: scroll;
-    
+    border-top: 1px solid #404040;
+}
+
+
+.menu > nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 20px;
+}
+
+.menu > nav a{
+    grid-column: 3/3;
+    margin: auto;
+    text-decoration: none;
+    color: #d3d2d2;
+}
+
+.nav{
+    grid-column: 2/2;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+.menu > nav a:hover{
+    color: #ffffff;
+}
+
+.menu > main a{
+    margin: 15px 20px;
+    text-decoration: none;
+    font-family: 'Circular-book', sans-serif;
+    color: #d3d2d2;
+}
+
+.menu > main a:hover{
+    color: #ffffff;
 }
 
 .main > nav{
@@ -70,6 +107,10 @@ a, p, h1, h2{
     text-decoration: underline;
 }
 
+.main h2, a{
+    margin-left: 20px;
+}
+
 section{
     display: flex;
     flex-wrap: wrap;
@@ -79,13 +120,14 @@ section{
 .caixa{
     flex: 1 1 180px;
     background-color: #272727;
-    margin: 0 15px 5px 5px;
+    margin: 0 15px 5px 20px;
     border-radius: 5px;
 }
 
 .caixa:hover{
     background-color: #424242;
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 
 .caixa > img{
@@ -125,6 +167,7 @@ ul{
 .img-g:hover{
     background-color: #424242;
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 
 .img-g  p{
@@ -178,7 +221,7 @@ ul{
 }
 
 .logo{
-    max-width: 100%;
-    width: 100%;
-    padding: 5px;
+    width: 80%;
+    padding: 15px;
+    height: 43px;
 }
