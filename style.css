@@ -43,7 +43,7 @@ a, p, h1, h2{
 
 .main{
         display: grid;
-        grid-template-rows: 10vh 30vh 60vh;
+        grid-template-rows: 9vh 41vh 50vh;
         grid-column: 2/9;
         background-color: #121212;
 }
@@ -55,8 +55,16 @@ a, p, h1, h2{
 .menu > main{
     overflow-y: scroll;
     border-top: 1px solid #404040;
+    overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #585858; 
+}
 
 .menu > nav{
     display: grid;
@@ -69,6 +77,7 @@ a, p, h1, h2{
     grid-column: 3/3;
     margin: auto 0px auto 15px;
     text-decoration: none;
+    font-size: 14px;
     color: #d3d2d2;
 }
 
@@ -110,7 +119,7 @@ a, p, h1, h2{
 
 
 .main h2, a{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 section{
@@ -120,10 +129,13 @@ section{
 }
 
 .caixa{
-    flex: 1 1 180px;
+    flex: 1 1 260px;
     background-color: #272727;
-    margin: 5px 20px;
+    margin: 5px 20px 5px 30px;
     border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .caixa:hover{
@@ -160,14 +172,14 @@ ul{
     max-width: 100%;
 }
 .img-g{
-    flex: 1 1 100px;
-    background-color: #272727;
-    margin: 20px 35px;
+    flex: 1 1 150px;
+    background-color: #181818;
+    margin: 20px 0px 20px 30px;
     border-radius: 7px;
 }
 
 .img-g:hover{
-    background-color: #424242;
+    background-color: #333333;
     transition-duration: 0.7s;
     cursor: pointer;
 }
@@ -179,8 +191,8 @@ ul{
 .img-g > img{
     display: block;
     margin: 15px auto 0px auto;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 5px;
 }
 
@@ -194,6 +206,7 @@ ul{
     display: inline-block;
     margin: 0px;
     font-size: 11px;
+    color: #BCBCBC;
 }
 
 #bloco{
@@ -247,6 +260,6 @@ ul{
 
 .logo{
     width: 80%;
-    padding: 15px;
+    padding: 24px 15px;
     height: 43px;
 }
