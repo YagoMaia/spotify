@@ -19,6 +19,10 @@ img{
     width: 50px;
 }
 
+h2{
+    font-size: 2em;
+}
+
 a, p, h1, h2{
     color: white;
     font-family: 'Circular-bold', sans-serif;
@@ -63,7 +67,7 @@ a, p, h1, h2{
 
 .menu > nav a{
     grid-column: 3/3;
-    margin: auto;
+    margin: auto 0px auto 15px;
     text-decoration: none;
     color: #d3d2d2;
 }
@@ -83,7 +87,8 @@ a, p, h1, h2{
     margin: 15px 20px;
     text-decoration: none;
     font-family: 'Circular-book', sans-serif;
-    color: #d3d2d2;
+    color: #BCBCBC;
+    font-size: 14px;
 }
 
 .menu > main a:hover{
@@ -99,13 +104,10 @@ a, p, h1, h2{
     overflow-y: auto;
 }
 
-.main a{
-    text-decoration: none;
+.main > main{
+    margin-top: 15px;
 }
 
-.main a:hover{
-    text-decoration: underline;
-}
 
 .main h2, a{
     margin-left: 20px;
@@ -120,7 +122,7 @@ section{
 .caixa{
     flex: 1 1 180px;
     background-color: #272727;
-    margin: 0 15px 5px 20px;
+    margin: 0px 20px;
     border-radius: 5px;
 }
 
@@ -185,8 +187,7 @@ ul{
 
 #barra{
     margin: 0 auto;
-    width: 230px;
-    padding-bottom: 9px;
+    width: 50%;
 }
 
 #barra > p{
@@ -195,30 +196,53 @@ ul{
 }
 
 #bloco{
-    background-color: black;
+    background-color: #4A4D46;
     display: inline-block;
     margin: 0 4px;
-    width: 150px;
-    height: 7px;
+    width: 400px;
+    height: 6px;
     border-radius: 6px;
 }
 
 .musica{
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 2/7;
+    width: 50%;
+    margin-left: 15px;
 }
 
 #footer{
     background-color: #242424;
+    height: 81px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
 }
+
+#footer > footer{
+    grid-column: 3/10;
+    grid-row: 5/5;
+    width: 100%;
+}
+
+
 
 .menu > main > a, .menu > nav > a{
     display: block;
 }
 
 .topico{
+    text-decoration: none;
+    display: block;
     font-size: 1.5em;
+    margin-top: 15px;
 }
+
+.topico:hover{
+    text-decoration: underline;
+}
+
 
 .logo{
     width: 80%;
