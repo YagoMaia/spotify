@@ -28,6 +28,14 @@ a, p, h1, h2{
     font-family: 'Circular-bold', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #585858; 
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -39,31 +47,23 @@ a, p, h1, h2{
     grid-template-rows: 10vh  45vh 33vh;
     grid-column: 1/1;
     width: 170px;
-}
-
-.main{
-        display: grid;
-        grid-template-rows: 9vh 41vh 50vh;
-        grid-column: 2/9;
-        background-color: #121212;
-}
-
-.menu{
     background-color: #000000;
+}
+
+.logo{
+    width: 80%;
+    padding: 24px 15px;
+    height: 43px;
+}
+
+.menu > main > a, .menu > nav > a{
+    display: block;
 }
 
 .menu > main{
     overflow-y: scroll;
     border-top: 1px solid #404040;
     overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #585858; 
 }
 
 .menu > nav{
@@ -81,16 +81,19 @@ a, p, h1, h2{
     color: #d3d2d2;
 }
 
+.menu > nav a:hover{
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
 .nav{
     grid-column: 2/2;
     height: 30px;
     width: 30px;
     margin: auto;
+    border-radius: 5px;
 }
 
-.menu > nav a:hover{
-    color: #ffffff;
-}
 
 .menu > main a{
     margin: 15px 20px;
@@ -102,6 +105,14 @@ a, p, h1, h2{
 
 .menu > main a:hover{
     color: #ffffff;
+}
+
+.main{
+        display: grid;
+        grid-template-rows: 9vh 41vh 50vh;
+        grid-column: 2/9;
+        background-color: #121212;
+        overflow-y: scroll;
 }
 
 .main > nav{
@@ -158,14 +169,6 @@ section{
     display: inline-block;
 }
 
-ul{
-    padding-inline-start: 1px;
-}
-
-.main{
-    overflow-y: scroll;
-}
-
 .albuns{
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +199,19 @@ ul{
     border-radius: 5px;
 }
 
+#footer{
+    background-color: #242424;
+    height: 81px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#footer > footer{
+    grid-column: 3/10;
+    grid-row: 5/5;
+    width: 100%;
+}
 
 #barra{
     margin: 0 auto;
@@ -213,7 +229,7 @@ ul{
     background-color: #4A4D46;
     display: inline-block;
     margin: 0 4px;
-    width: 400px;
+    width: 295px;
     height: 6px;
     border-radius: 6px;
 }
@@ -221,29 +237,10 @@ ul{
 .musica{
     height: 100%;
     grid-column: 1/2;
+    column-width: 100px;
     grid-row: 2/7;
     width: 50%;
     margin-left: 15px;
-}
-
-#footer{
-    background-color: #242424;
-    height: 81px;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-}
-
-#footer > footer{
-    grid-column: 3/10;
-    grid-row: 5/5;
-    width: 100%;
-}
-
-
-
-.menu > main > a, .menu > nav > a{
-    display: block;
 }
 
 .topico{
@@ -255,11 +252,4 @@ ul{
 
 .topico:hover{
     text-decoration: underline;
-}
-
-
-.logo{
-    width: 80%;
-    padding: 24px 15px;
-    height: 43px;
 }
