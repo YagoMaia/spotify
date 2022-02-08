@@ -12,6 +12,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0px;
+    background-color: #121212;
 }
 
 img{
@@ -44,7 +45,7 @@ a, p, h1, h2{
 
 .menu{
     display: grid;
-    grid-template-rows: 10vh  45vh 33vh;
+    grid-template-rows: 9vh  42vh 37vh 12vh;
     grid-column: 1/1;
     width: 170px;
     background-color: #000000;
@@ -84,6 +85,10 @@ a, p, h1, h2{
 .menu > nav a:hover{
     color: #ffffff;
     transition-duration: 0.5s;
+}
+
+.menu > footer{
+    background-color: #181818;
 }
 
 .nav{
@@ -199,23 +204,8 @@ section{
     border-radius: 5px;
 }
 
-#footer{
-    background-color: #242424;
-    height: 81px;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-}
-
-#footer > footer{
-    grid-column: 3/10;
-    grid-row: 5/5;
-    width: 100%;
-}
-
 #barra{
     margin: 0 auto;
-    width: 50%;
 }
 
 #barra > p{
@@ -235,12 +225,11 @@ section{
 }
 
 .musica{
-    height: 100%;
-    grid-column: 1/2;
-    column-width: 100px;
-    grid-row: 2/7;
-    width: 50%;
-    margin-left: 15px;
+    display: block;
+    height: 70%;
+    width: 38%;
+    margin-left: 20px;
+    padding: 10px 0px;
 }
 
 .topico{
@@ -252,4 +241,51 @@ section{
 
 .topico:hover{
     text-decoration: underline;
+}
+
+.container > footer{
+    grid-column: 2/9;
+    background-color: #181818;
+    height: 81px;
+}
+
+#player{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#player > #barra{
+    grid-column: 1/9;
+    grid-row: 3;
+}
+
+.busca{
+    grid-column: 2/9;
+    overflow-y: scroll;
+}
+
+.busca h1{
+    margin-left: 20px;
+}
+
+.busca > section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.busca h2 {
+    padding: 16px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.generos{
+    border-radius: 5px;
+    flex: 1 1 190px;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
 }
