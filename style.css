@@ -47,7 +47,6 @@ a, p, h1, h2{
     display: grid;
     grid-template-rows: 9vh  42vh 37vh 12vh;
     grid-column: 1/1;
-    width: 170px;
     background-color: #000000;
 }
 
@@ -247,7 +246,7 @@ section{
 .container > footer{
     grid-column: 2/9;
     background-color: #181818;
-    height: 81px;
+    height: 12vh;
 }
 
 #player{
